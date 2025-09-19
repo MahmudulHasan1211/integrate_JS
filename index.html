@@ -19,12 +19,32 @@
         <li class="gm">pubG</li>
         <li class="gm">Free fire</li>
         <li class="gm">Asphalt 9</li>
+    <section class="fruits">
+        <h2>fruits container</h2>
+        <li class="gissokal">mango</li>
+        <li class="gissokal">apple</li>
+        <li class="gissokal">banana</li>
+
+    </section>
+
+
+
     <script src="./domJsFiles/dom.js"></script>
     <script>
         const plays = document.getElementsByClassName('gm')
         for(const play of plays){
             play.innerText = 'gameHoGeya';
         }
+
+    // all li will selected or show here 
+    const folfoladi = document.querySelectorAll('.fruits li')
+    // console.log(folfoladi)
+    for (const fol of folfoladi){
+        console.log(fol.innerText)
+    }
+    // only the first one will selected here  
+    const newFol = document.querySelector('.fruits li')
+    console.log(newFol)
     </script>
 </body>
 </html>
