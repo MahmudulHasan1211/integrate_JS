@@ -8,11 +8,23 @@
 </head>
 <body>
     <h1>THE JOURNEY OF DOM</h1>
+    <h1 id="secondText">New sentence is here </h1>
     <ul>
         <li>Mahmudul</li>
         <li>Hasan</li>
         <li>Molla</li>
     </ul>
+
+    <h1>Favourite games</h1>
+        <li class="gm">pubG</li>
+        <li class="gm">Free fire</li>
+        <li class="gm">Asphalt 9</li>
     <script src="./domJsFiles/dom.js"></script>
+    <script>
+        const plays = document.getElementsByClassName('gm')
+        for(const play of plays){
+            play.innerText = 'gameHoGeya';
+        }
+    </script>
 </body>
 </html>
