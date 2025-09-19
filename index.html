@@ -26,23 +26,22 @@
         <li class="gissokal">banana</li>
 
     </section>
-
-
-
+<!-- external js  -->
     <script src="./domJsFiles/dom.js"></script>
     <script>
+// get Element by class name 
         const plays = document.getElementsByClassName('gm')
         for(const play of plays){
             play.innerText = 'gameHoGeya';
         }
 
-    // all li will selected or show here 
+    // all li will selected or show here called queryselecor all
     const folfoladi = document.querySelectorAll('.fruits li')
     // console.log(folfoladi)
     for (const fol of folfoladi){
         console.log(fol.innerText)
     }
-    // only the first one will selected here  
+    // only the first one will selected here queryselector only
     const newFol = document.querySelector('.fruits li')
     console.log(newFol)
     </script>
