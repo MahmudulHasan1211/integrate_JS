@@ -15,10 +15,20 @@
         <li>Molla</li>
     </ul>
 
+    <section>
+        <h1 id="setAtt" class="sub, subject, lal">ALL Enginnering subject Here</h1>
+        <ul>
+            <li>CSE</li>
+            <li>EEE</li>
+            <li>TEXTILE</li>
+        </ul>
+    </section>
+
     <h1>Favourite games</h1>
         <li class="gm">pubG</li>
         <li class="gm">Free fire</li>
         <li class="gm">Asphalt 9</li>
+
     <section id="fruits" class="new-class">
         <h2>fruits container</h2>
         <li id="checking">test here</li>
@@ -26,6 +36,14 @@
         <li class="gissokal">apple</li>
         <li class="gissokal">banana</li>
 
+    </section>
+
+    <section>
+        <ul class="HTMLVSTEXT">
+            <li>bonobase</li>
+            <li>safayate</li>
+            <li>DOM</li>
+        </ul>
     </section>
 <!-- external js  -->
     <script src="./domJsFiles/dom.js"></script>
@@ -45,6 +63,8 @@
     // only the first one will selected here queryselector only
     const newFol = document.querySelector('.fruits li')
     console.log(newFol)
+
+
 //document.getElementById('checking').style.backgroundColor='yellow'
 // 'yellow'
 // document.getElementById('checking').style.textAlign='center'
@@ -69,6 +89,35 @@
 // undefined
 // title.classList
 // DOMTokenList ['new-class', value: 'new-class']
+
+
+// add and remove class using getAttribute
+
+// null
+// const title = document.getElementById('setAtt')
+// undefined
+// title.classList
+// DOMTokenList(3) ['sub,', 'subject,', 'lal', value: 'sub, subject, lal']
+// title.classList.remove('sub')
+// undefined
+// title.classList
+// DOMTokenList(3) ['sub,', 'subject,', 'lal', value: 'sub, subject, lal']
+// title.classList.add('biddapith')
+// undefined
+// title.classList
+// DOMTokenList(4) ['sub,', 'subject,', 'lal', 'biddapith', value: 'sub, subject, lal biddapith']
+// title.classList.remove('biddapith')
+// undefined
+// title.classList
+// DOMTokenList(3) ['sub,', 'subject,', 'lal', value: 'sub, subject, lal']
+
+
+
+// innerHTML and innerTEXT 
+// document.getElementsByClassName('HTMLVSTEXT')[0].innerHTML
+// '\n            <li>bonobase</li>\n            <li>safayate</li>\n            <li>DOM</li>\n        '
+// document.getElementsByClassName('HTMLVSTEXT')[0].innerText
+// 'bonobase\nsafayate\nDOM'
     </script>
 </body>
 </html>
