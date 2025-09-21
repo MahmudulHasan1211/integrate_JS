@@ -1,12 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DOM of JS</title>
     <link rel="stylesheet" href="./styles/styles.css">
 </head>
-<body>
+
+<body id="mainContainer">
     <h1>THE JOURNEY OF DOM</h1>
     <h1 id="secondText">New sentence is here </h1>
     <ul>
@@ -25,9 +27,9 @@
     </section>
 
     <h1>Favourite games</h1>
-        <li class="gm">pubG</li>
-        <li class="gm">Free fire</li>
-        <li class="gm">Asphalt 9</li>
+    <li class="gm">pubG</li>
+    <li class="gm">Free fire</li>
+    <li class="gm">Asphalt 9</li>
 
     <section id="fruits" class="new-class">
         <h2>fruits container</h2>
@@ -38,92 +40,96 @@
 
     </section>
     <section id="hayhay">
-        <ul>
-        <li>eku</li>
-        <li>seku</li>
-        <li>beku</li>
-    </ul>
+        <ul id="funnode">
+            <h2 class="h2">play with node</h2>
+            <li class="hudai">eku</li>
+            <li class="hudai">seku</li>
+            <li class="hudai">beku</li>
+        </ul>
     </section>
     <section>
         <ul class="HTMLVSTEXT">
+
             <li>bonobase</li>
             <li>safayate</li>
             <li>DOM</li>
         </ul>
     </section>
-<!-- external js  -->
+    <!-- external js  -->
     <script src="./domJsFiles/dom.js"></script>
     <script>
-// get Element by class name 
+        // get Element by class name 
         const plays = document.getElementsByClassName('gm')
-        for(const play of plays){
+        for (const play of plays) {
             play.innerText = 'gameHoGeya';
         }
 
-    // all li will selected or show here called queryselecor all
-    const folfoladi = document.querySelectorAll('.fruits li')
-    // console.log(folfoladi)
-    for (const fol of folfoladi){
-        console.log(fol.innerText)
-    }
-    // only the first one will selected here queryselector only
-    const newFol = document.querySelector('.fruits li')
-    console.log(newFol)
+        // all li will selected or show here called queryselecor all
+        const folfoladi = document.querySelectorAll('.fruits li')
+        // console.log(folfoladi)
+        for (const fol of folfoladi) {
+            console.log(fol.innerText)
+        }
+        // only the first one will selected here queryselector only
+        const newFol = document.querySelector('.fruits li')
+        // console.log(newFol)
 
 
-//document.getElementById('checking').style.backgroundColor='yellow'
-// 'yellow'
-// document.getElementById('checking').style.textAlign='center'
-// 'center'
-// document.getElementById('checking').style.color='orange'
-// 'orange'
-// document.getElementById('checking').style.color='blue'
-// 'blue'
-// document.getElementById('checking').style.padding='10px'
-// '10px'
-// document.getElementById('checking').style.fontSize='5px'
-// '5px'
-// document.getElementById('checking').style.fontSize='2px'
-// '2px'
-// document.getElementById('checking').style.fontSize='1px'
-// const title = document.getElementById('fruits')
-// undefined
-// title.getAttribute('id')
-// 'fruits'
+        //document.getElementById('checking').style.backgroundColor='yellow'
+        // 'yellow'
+        // document.getElementById('checking').style.textAlign='center'
+        // 'center'
+        // document.getElementById('checking').style.color='orange'
+        // 'orange'
+        // document.getElementById('checking').style.color='blue'
+        // 'blue'
+        // document.getElementById('checking').style.padding='10px'
+        // '10px'
+        // document.getElementById('checking').style.fontSize='5px'
+        // '5px'
+        // document.getElementById('checking').style.fontSize='2px'
+        // '2px'
+        // document.getElementById('checking').style.fontSize='1px'
+        // const title = document.getElementById('fruits')
+        // undefined
+        // title.getAttribute('id')
+        // 'fruits'
 
-// const title = document.getElementById('fruits')
-// undefined
-// title.classList
-// DOMTokenList ['new-class', value: 'new-class']
-
-
-// add and remove class using getAttribute
-
-// null
-// const title = document.getElementById('setAtt')
-// undefined
-// title.classList
-// DOMTokenList(3) ['sub,', 'subject,', 'lal', value: 'sub, subject, lal']
-// title.classList.remove('sub')
-// undefined
-// title.classList
-// DOMTokenList(3) ['sub,', 'subject,', 'lal', value: 'sub, subject, lal']
-// title.classList.add('biddapith')
-// undefined
-// title.classList
-// DOMTokenList(4) ['sub,', 'subject,', 'lal', 'biddapith', value: 'sub, subject, lal biddapith']
-// title.classList.remove('biddapith')
-// undefined
-// title.classList
-// DOMTokenList(3) ['sub,', 'subject,', 'lal', value: 'sub, subject, lal']
+        // const title = document.getElementById('fruits')
+        // undefined
+        // title.classList
+        // DOMTokenList ['new-class', value: 'new-class']
 
 
+        // add and remove class using getAttribute
 
-// innerHTML and innerTEXT 
-// document.getElementsByClassName('HTMLVSTEXT')[0].innerHTML
-// '\n            <li>bonobase</li>\n            <li>safayate</li>\n            <li>DOM</li>\n        '
-// document.getElementsByClassName('HTMLVSTEXT')[0].innerText
-// 'bonobase\nsafayate\nDOM'
+        // null
+        // const title = document.getElementById('setAtt')
+        // undefined
+        // title.classList
+        // DOMTokenList(3) ['sub,', 'subject,', 'lal', value: 'sub, subject, lal']
+        // title.classList.remove('sub')
+        // undefined
+        // title.classList
+        // DOMTokenList(3) ['sub,', 'subject,', 'lal', value: 'sub, subject, lal']
+        // title.classList.add('biddapith')
+        // undefined
+        // title.classList
+        // DOMTokenList(4) ['sub,', 'subject,', 'lal', 'biddapith', value: 'sub, subject, lal biddapith']
+        // title.classList.remove('biddapith')
+        // undefined
+        // title.classList
+        // DOMTokenList(3) ['sub,', 'subject,', 'lal', value: 'sub, subject, lal']
+
+
+
+        // innerHTML and innerTEXT 
+        // document.getElementsByClassName('HTMLVSTEXT')[0].innerHTML
+        // '\n            <li>bonobase</li>\n            <li>safayate</li>\n            <li>DOM</li>\n        '
+        // document.getElementsByClassName('HTMLVSTEXT')[0].innerText
+        // 'bonobase\nsafayate\nDOM'
     </script>
+    <script src="./domJsFiles/node.js"></script>
 </body>
+
 </html>
