@@ -22,6 +22,11 @@
     <!-- option 04 the last option and most used option  -->
     <button id="violate">Purple Button </button>
 
+
+    <!-- modern we will use this  -->
+
+    <button id="blackButton">Black Button </button>
+
     <!-- external js  -->
     <script src="./events/events.js"></script>
 
@@ -50,7 +55,11 @@
             document.body.style.backgroundColor = 'purple'
         }
 
-
+        // modern 
+        const BB = document.getElementById('blackButton')
+        BB.addEventListener('click', function(){
+            document.body.style.backgroundColor = 'black'
+        })
     </script>
 </body>
 
