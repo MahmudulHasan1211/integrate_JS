@@ -1,13 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+
 <body id="mainBody">
     <h1>Dom er ajke special event</h1>
-    <button onclick="console.log(999)">CLICK ME </button>
+
+    <!-- option 01: of using onclick -->
+    <button onclick="document.body.style.backgroundColor = 'red' ">Red Button </button>
+
+    <!-- option 02: using onclick its about calling function  -->
+    <button onclick="orangeButton()">Orange Button </button>
+
+    <!-- option 03: calling id  -->
+    <button id="greenButton">Green Button </button>
+
+    <!-- option 04 the last option and most used option  -->
+    <button id="violate">Purple Button </button>
+
+    <!-- external js  -->
     <script src="./events/events.js"></script>
+
+    <!-- internal js -->
+    <script>
+        // using js align center of all things 
+        const alignment = document.getElementById('mainBody')
+        alignment.style.textAlign = 'center'
+
+
+        // Option 02
+        function orangeButton() {
+            document.body.style.backgroundColor = 'orange';
+        }
+        //  Option 03 
+        const sobuj = document.getElementById('greenButton')
+        sobuj.onclick = makeGreen;
+
+        function makeGreen() {
+            document.body.style.backgroundColor = 'green'
+        }
+
+        // final and most used Option
+        const last = document.getElementById('violate')
+        last.onclick = function badami() {
+            document.body.style.backgroundColor = 'purple'
+        }
+
+
+    </script>
 </body>
+
 </html>
