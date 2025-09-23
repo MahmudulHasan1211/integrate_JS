@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1 id="mainHeading">This is the current Text</h1>
+    <button onclick="newClick()">Click Me</button>
+
+    <script>
+        function newClick() {
+            const newF = document.getElementById('mainHeading')
+            newF.innerText = "Text changed by function"
+        }
+    </script>
+</body>
+
+</html>
