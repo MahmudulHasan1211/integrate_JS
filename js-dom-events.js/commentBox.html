@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CommentBox</title>
+</head>
+
+<body>
+    <h1>Instagram comment Box</h1>
+    <div id="commentContainer">
+        <h3>Comment Here</h3>
+        <h5>Nice</h5>
+
+    </div>
+    <textarea name="" id="newComment"></textarea> <br>
+    <button id="bttn">post</button>
+
+    <script>
+        // option 01: add addEventListener to the button 
+        document.getElementById('bttn').addEventListener('click', function () {
+
+            // step 02 :get the Comment
+            const boxy = document.getElementById('newComment');
+            const newvalues = boxy.value;
+            // set the new Comment 
+
+            const booox = document.getElementById('commentContainer')
+            const head = document.createElement('h5')
+
+            head.innerText = newvalues
+            booox.appendChild(head)
+
+            // step 04 clear the text box 
+            boxy.value = '';
+        })
+    </script>
+</body>
+
+</html>
