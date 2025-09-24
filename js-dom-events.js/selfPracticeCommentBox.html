@@ -61,17 +61,16 @@
 
         //     oldComment.value = ' ';
         //    })
-
-        document.getElementById('onlyButton').addEventListener('click', function () {
-
-            const oldComment = document.getElementById('commentBoxStatic')
+     
+        document.getElementById('onlyButton').addEventListener('click', function(){
+            const oldComment = document.getElementById('commentBoxStatic');
             const newComment = oldComment.value;
 
-            const text = document.getElementById('paragraphs');
+            const text = document.getElementById('paragraphs')
             const p = document.createElement('p')
 
             p.innerText = newComment;
-            text.appendChild(p)
+            text.appendChild(p);
 
             oldComment.value = ' ';
         })
