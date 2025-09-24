@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <main>
+        <div id="paragraphs">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At fugiat repudiandae animi, nemo nulla iusto
+                esse dolore deserunt ea aperiam?
+            </p>
+
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint, vero velit omnis unde accusamus sequi?
+                Consequuntur accusamus aliquid, fugiat, iure accusantium, modi culpa molestiae illum deleniti dolorum
+                optio dolore hic!</p>
+
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate, aperiam itaque ipsam harum quam cum
+                ut assumenda. Amet, voluptatem consectetur!</p>
+
+
+        </div>
+        <textarea name="" id="commentBoxStatic" cols="30" rows="10"></textarea> <br>
+        <button id="onlyButton">Post</button>
+        <div>
+
+        </div>
+    </main>
+    <script>
+        // // button click or not 
+        // document.getElementById('onlyButton').addEventListener('click', function(){
+
+        // // comment box pacche kina 
+        // const oldComment = document.getElementById('commentBoxStatic');
+        // const newComment = oldComment.value
+
+
+        // //set the new comment to the ccomment
+        // const text = document.getElementById('paragraphs');
+        // const p = document.createElement('p');
+
+        // p.innerText = newComment;
+        // text.appendChild(p);
+
+        // oldComment.value ='';
+        // })
+
+        //    document.getElementById('onlyButton').addEventListener('click', function (){
+
+        //     const oldComment = document.getElementById('commentBoxStatic')
+        //     const newComment = oldComment.value;
+
+        //     const text = document.getElementById('paragraphs')
+        //     const p = document.createElement('p')
+
+        //     p.innerText = newComment;
+        //     text.appendChild(p)
+
+        //     oldComment.value = ' ';
+        //    })
+
+        document.getElementById('onlyButton').addEventListener('click', function () {
+
+            const oldComment = document.getElementById('commentBoxStatic')
+            const newComment = oldComment.value;
+
+            const text = document.getElementById('paragraphs');
+            const p = document.createElement('p')
+
+            p.innerText = newComment;
+            text.appendChild(p)
+
+            oldComment.value = ' ';
+        })
+    </script>
+</body>
+</html>
