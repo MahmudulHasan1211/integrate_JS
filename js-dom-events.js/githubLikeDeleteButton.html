@@ -6,16 +6,38 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>
-        hello bad DOM 
-    </h1>
-    <textarea name="" id=""></textarea> <br>
-    <button id="onlyButton">Click</button>
+    <h1 id="sentence">HIDE ME </h1>
+    <input type="text" id="sentence1" placeholder="please type delete">
+    <button id="onlyButton" disabled>Click</button>
 
 
     <script>
+        document.getElementById('sentence1').addEventListener('keyup', function(){
+            const text = event.target.value;
+            const deleteButton = document.getElementById('onlyButton');
+
+            if(text === 'delete'){
+                deleteButton.removeAttribute('disabled');
+            }
+            else{
+                deleteButton.setAttribute('disabled', true)
+            }
+        })
+        // document.getElementById('sentence').addEventListener('focus', function(){
+        //     console.log("focused")
+        // })
+
+        // document.getElementById('sentence').addEventListener('blur', function(){
+        //     console.log("blured")
+        // })
+
+        // document.getElementById('sentence').addEventListener('mousemove', function(){
+        //     console.log("mouse assche")
+        // })
+// remove the h1 tag text 
         document.getElementById('onlyButton').addEventListener('click', function(){
-            console.log("clicked")
+            const secret = document.getElementById('sentence')
+            secret.style.display = 'none';
         })
     </script>
 </body>
